@@ -1,0 +1,31 @@
+
+Objective to pull current stock price for IBM
+
+https://www.alphavantage.co/documentation/
+
+Token: AORQ6JYKAPJ1JEI8
+
+Sample python code:
+``
+import requests
+
+# replace the "demo" apikey below with your own key from https://www.alphavantage.co/support/#api-key
+url = 'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=demo'
+r = requests.get(url)
+data = r.json()
+
+print(data)
+``
+
+================
+
+We are also testing this site: api.roic.ai
+
+Token: cUCiChPO7LgGvMPHMslK2wydxcGeguPD
+
+https://api.roic.ai/v2/tickers/list?apikey=cUCiChPO7LgGvMPHMslK2wydxcGeguPD
+
+https://api.roic.ai/v2/tickers/list?apikey=cUCiChPO7LgGvMPHMslK2wydxcGeguPD
+
+https://api.roic.ai/v2/tickers/search?query={query}&apikey=cUCiChPO7LgGvMPHMslK2wydxcGeguPD
+
